@@ -21,8 +21,9 @@
 }
 
 .nav__link {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 4px 17px;
     font-family: "RobotoRegular", sans-serif;
     font-size: 12px;
     line-height: 12px;
@@ -35,7 +36,6 @@
 .nav__link-active {
     border-bottom: 1px solid #333333;
     border-top: 1px solid #333333;
-    padding: 4px 17px;
 }
 
 .main {
