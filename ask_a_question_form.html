@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30bdd72798.js" crossorigin="anonymous"></script>
+    <title>Ask a question</title>
+
+    <style>
+        .flex_container {
+            display: flex;
+            flex-direction: column;
+            width: 469px;
+            height: 590px;
+            align-items: center;
+
+        }
+
+        .header {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 25px;
+            /* identical to box height */
+
+            letter-spacing: 0.04em;
+
+            color: #333333;
+
+        }
+
+        .field {
+            width: 391px;
+            height: 46px;
+            border: none;
+            background: #F3F3F3;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.04em;
+
+            color: #8D8D8D;
+            margin-bottom: 10px;
+            padding-left: 15px;
+        }
+
+        .field_big {
+            width: 391px;
+            height: 147px;
+            border: none;
+            background: #F3F3F3;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.04em;
+            padding-top: 15px;
+            padding-left: 15px;
+
+
+            color: #8D8D8D;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+            
+        }
+
+        label {
+            color: #000;
+            cursor: default;
+            font-weight: normal;
+            vertical-align: middle;
+            line-height: 0.5em;
+
+            
+            
+        }
+
+        label:before {
+            content: " ";
+            color: #000;
+            display: inline-block;
+            font: 20px/30px FontAwesome;
+            margin-right: 15px;
+            position: relative;
+            text-align: center;
+            text-indent: 0px;
+            width: 30px;
+            height: 30px;
+            background: #F3F3F3;
+            border: none;
+            border-image: initial;
+            vertical-align: middle;
+            
+        }
+
+        input:checked+label:before {
+            content: "\f00c";
+        }
+
+        .agreement {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1em;
+            letter-spacing: 0.03em;
+            line-height: 1;
+            align-self: flex-start;
+            padding-left: 30px;
+
+            color: #333333;
+
+
+
+        }
+
+        .agreement__text-2 {
+            padding-left: 45px;
+        }
+
+        .button {
+            width: 409px;
+            height: 42px;
+            border: none;
+            background-color: #333333;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<div>
+    <div class="flex_container">
+        <h1 class="header">Задать вопрос</h1>
+        <div>
+            <input class="field" type="text" placeholder="Имя" id="name" />
+        </div>
+        <div>
+            <input class="field" type="tel" required placeholder="Номер телефона" id="mobile" />
+        </div>
+        <div>
+            <input class="field" type="email" required placeholder="E-mail" id="email" />
+        </div>
+        <div>
+            <input class="field" type="text" placeholder="Интересующий товар/ услуга" id="service" />
+        </div>
+        <div>
+            <textarea class="field_big" rows="10" required placeholder="Сообщение" id="message"></textarea>
+        </div>
+        <div class="agreement">
+            <input type="checkbox" id="checkbox-id" />
+            <label for="checkbox-id">Отправляя заявку Вы соглашаетесь с политикой <span class="agreement__text-2"> конфиденциальности </span></label>
+        </div>
+        <div>
+            <button class="button">ОТПРАВИТЬ</button>
+        </div>
+    </div>
+    </body>
+
+
+
+</html>
