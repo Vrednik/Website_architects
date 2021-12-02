@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/adaptive.css">
     <title>Website of architects</title>
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
             <img src="./assets/images/logo_header.png" alt="">
+        </div> 
+        <div class="nav__burger">
+            &#9776;
         </div>
         <nav class="nav">
-            <a href="#" class="nav__link nav__link-active">MAIN</a>
+            <a href="index.html" class="nav__link nav__link-active">MAIN</a>
             <a href="#" class="nav__link">GALLERY</a>
-            <a href="#" class="nav__link">PROJECTS</a>
+            <a href="our_projects.html" class="nav__link">PROJECTS</a>
             <a href="#" class="nav__link">CERTIFICATIONS</a>
             <a href="#" class="nav__link">CONTACTS</a>
         </nav>
@@ -53,15 +57,55 @@
             </div>
         </div>
         <div class="main__img">
-            <div class="main__img-bg">
-                <img class="" src="./assets/images/main_img.png" alt="">
-                <div class="main__img-btn btn btn__white">
-                    <a class="btn__content" href="#">
-                        View Project
-                    <div class="main__img-btn_forward">
-                        <img src="./assets/images/arrow_forward.png" alt="arrow">
-                    </div>
-                    </a>
+            <img src="./assets/images/main_img.png" alt="">
+            <a class="main__img-btn btn btn__white" href="#">
+                View Project
+                <div class="main__img-btn_forward">
+                <img src="./assets/images/arrow_forward.png" alt="arrow">
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about__content">
+            <div class="about__content-img">
+                <div class="about__content-img_small">
+                    <img class="about__img-1" src="./assets/images/about_1.png" alt="">
+                    <img class="about__img-2" src="./assets/images/about_2.png" alt="">
+                </div>
+                    <img class="about__img-3" src="./assets/images/about_3.png" alt="">
+            </div>
+            <div class="about__content-text">
+                <h1 class="about__content-title title">About</h1>
+                <div class="about__content-desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+                <a class="about__content-btn btn btn__white" href="#">
+                    Read More
+                <div class="main__img-btn_forward">
+                    <img src="./assets/images/arrow_forward.png" alt="arrow">
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="focus">
+        <h1 class="focus__content-title title">Main Focus/Mission Statement</h1>
+        <div class="focus__content">
+            <div class="focus__content-numbers">
+                <div class="focus__content-desc focus__content-desc-1 ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.
+                </div>
+            </div>
+            <div class="focus__content-numbers">
+                <div class="focus__content-desc focus__content-desc-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat,
+                    magna mauris porttitor tortor, a auctor est felis ut nisl.
                 </div>
             </div>
         </div>
