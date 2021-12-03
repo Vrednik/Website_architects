@@ -3,6 +3,11 @@
     src: url(../fonts/RobotoRegular.ttf);
 }
 
+@font-face {
+    font-family: "GothicA1-Thin";
+    src: url(../fonts/GothicA1-Thin.ttf);
+}
+
 .header {
     display: flex;
     padding: 29px 135px;
@@ -31,4 +36,190 @@
     border-bottom: 1px solid #333333;
     border-top: 1px solid #333333;
     padding: 4px 17px;
+}
+
+.ourProjects-wrapper {
+    width: 1170px;
+    height: 765px;
+    margin: 0 135px;
+    position: relative;
+}
+
+.ourProjects-wrapper h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    font-family: "RobotoRegular", sans-serif;
+    color: #BDBDBD;
+}
+
+.ourProjects-grid-container {
+    display: grid;
+    width: 1170px;
+    grid-template-columns: 270px 270px 170px 370px;
+    grid-template-rows: repeat(2, 255px);
+    grid-gap: 30px;
+
+}
+
+.ourProjects-grid-container #item-1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+}
+
+.ourProjects-grid-container #item-2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+
+.ourProjects-grid-container #item-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.ourProjects-grid-container #item-4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.ourProjects-grid-container #item-5 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#ourProjects-firstImage {
+    filter: brightness(50%);
+}
+
+#ourProjects-firstImage-text {
+    position: absolute;
+    left: 79px;
+    top: 48px;
+    width: 233px;
+    height: 160px;
+}
+
+#ourProjects-firstImage-text-one {
+    font-family: "RobotoRegular";
+    src: url(../fonts/RobotoRegular.ttf);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    color: white;
+}
+
+#ourProjects-firstImage-text-two {
+    font-family: "GothicA1-Thin";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 10px;
+}
+
+.project-name {
+    font-family: "RobotoRegular";
+    src: url(../fonts/RobotoRegular.ttf);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    color: #BDBDBD;
+
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 2fr 1.fr;
+}
+
+.buttonP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 220px;
+    height: 70px;
+    background-color: #333333;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #FFFFFF
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+    font-family: "RobotoRegular";
+    src: url(../fonts/RobotoRegular.ttf);
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.contactUs-wrapper {
+    width: 1170px;
+    height: 603px;
+    margin: 0 135px;
+}
+
+.Contact-us {
+    font-family: "RobotoRegular";
+    src: url(../fonts/RobotoRegular.ttf);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    color: #BDBDBD;
+}
+
+.name,
+.number,
+.email,
+.interest {
+    width: 391px;
+    height: 46px;
+    background-color: #F3F3F3;
+    border: none;
+    margin-bottom: 10px;
+    font-family: "RobotoRegular";
+    src: url(../fonts/RobotoRegular.ttf);
+    font-size: 14px;
+
+}
+
+.message {
+    width: 391px;
+    height: 147px;
+    background-color: #F3F3F3;
+    border: none;
+    font-family: "RobotoRegular";
+    src: url(../fonts/RobotoRegular.ttf);
+    font-size: 14px;
+}
+
+#pic {
+    position: absolute;
+    width: 749x;
+    height: 383px;
+    left: 550px;
+
+
+}
+
+#buttonS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 220px;
+    height: 70px;
+    background-color: #333333;
+    margin-right: 100px;
+    margin-top: 75px;
 }

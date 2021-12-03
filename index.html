@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <title>Website of architects</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__logo">
@@ -21,5 +23,62 @@
             <a href="#" class="nav__link">CONTACTS</a>
         </nav>
     </header>
+
+    <div class="ourProjects-wrapper">
+        <h1>Our Projects</h1>
+        <div class="ourProjects-grid-container">
+            <div id="item-1">
+                <img id="ourProjects-firstImage" src="./assets/images/imageFirst.svg" alt="buildingFirst">
+                <div id="ourProjects-firstImage-text">
+                    <div id="ourProjects-firstImage-text-one">Sample Project</div>
+                    <div id="ourProjects-firstImage-text-two">view more &rarr;</div>
+                </div>
+            </div>
+            <div id="item-2">
+                <img src="./assets/images/imageSec.svg" alt="buildingSec">
+            </div>
+            <div id="item-3"><img src="./assets/images/imageTh.svg" alt="buildingThird"></div>
+            <div id="item-4"><img src="./assets/images/imageFo.svg" alt="buildingForth"></div>
+            <div id="item-5"><img src="./assets/images/imageFi.svg" alt="buildingFifth"></div>
+        </div>
+        <div class="buttonP"> <a href="all-projects">ALL PROJECTS &rarr;</a>
+        </div>
+    </div>
+
+    <div class="contactUs-wrapper">
+        <h1 class="Contact-us">Contact us</h1>
+
+        <img id="pic" src="./assets/images/man.svg" alt="man-calls">
+
+        <div class="form-1">
+            <label for="name"></label>
+            <input type="text" class="name" id="name" placeholder="Name">
+        </div>
+        <div class="form-2">
+            <label for="Number"></label>
+            <input type="text" class="number" id="phoneNumber" placeholder="Phone Number*">
+        </div>
+
+        <div class="form-3">
+            <label for="Email"></label>
+            <input type="text" class="email" id="email" placeholder="Email*">
+        </div>
+
+        <div class="form-4">
+            <label for="InterestedIN"></label>
+            <input type="text" class="interest" id="InterestedIn" placeholder="Interested In">
+        </div>
+
+        <div class="form-5">
+            <label for="Message"></label>
+            <textarea class="message" id="Message" rows="4" placeholder="Message*"></textarea>
+        </div>
+
+        <div id="buttonS">
+            <a href="Send-email">SEND EMAILS &rarr;</a>
+        </div>
+    </div>
+
 </body>
+
 </html>

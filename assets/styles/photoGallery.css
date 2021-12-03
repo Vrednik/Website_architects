@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(../fonts/RobotoRegular.ttf);
+}
+
+.photoGallery-wrapper {
+    width: 1170px;
+    height: 860px;
+    margin: 0 135px;
+    position: relative;
+}
+
+#photo_name {
+    color: #BDBDBD;
+    font-family: "RobotoRegular";
+    src: url(../fonts/RobotoRegular.ttf);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 64px;
+}
+
+.gallery_name {
+    color: #333333;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(5, 200px);
+}
+
+.main__control-buttons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.main__control-buttons-numbers {
+    margin-top: 90px;
+}
+
+.slide__numbers {
+    display: flex;
+}
+
+.slide__number {
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BDBDBD;
+    margin-top: 15px;
+}
+
+.number-active {
+    max-width: 24px;
+    word-break: break-all;
+    color: #000000;
+}
+
+.slide__slash {
+    margin: 15px 32px 0 26px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    transform: rotate(40deg);
+    height: 35px;
+    background: #E0E0E0;
+}
+
+.button_small {
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    width: 53px;
+    height: 53px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button_right {
+    background: #F9F9F9;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+}
