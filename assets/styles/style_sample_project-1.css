@@ -1,0 +1,258 @@
+/* начало Подключение шрифтов */
+@font-face {
+    font-family: 'RobotoLight';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/RobotoLight.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/RobotoRegular.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/RobotoMedium.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/RobotoBold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/OpenSansRegular.ttf);
+}
+
+/* конец Подключение шрифтов */
+
+
+
+body {
+    font-family: "RobotoLight";
+    font-size: 16px;
+    line-height: 64px;
+    color: #333333;
+}
+
+
+
+/*Начало стилей header */
+.header {
+    display: flex;
+    margin: 29px 9.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+.nav__link {
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 4px 17px;
+    font-family: 'RobotoRegular';
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.nav__link-active {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+.nav__link:active {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+/* Конец стилей header */
+
+
+
+/* Начало стилей main */
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 63px 9.5% 120px 9.5%;
+    gap: 30px;
+}
+
+.content-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-one__title {
+    width: 259px;
+    margin: 0 0 29px 0;
+}
+
+.title_grey {
+    font-family: 'RobotoLight';
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 100%;
+    color: #BDBDBD;
+}
+
+.title_black {
+    font-family: 'RobotoBold';
+    font-size: 64px;
+    line-height: 64px;
+    color: #333333;
+}
+
+.content-one__line {
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.content-two__image-one {
+    width: 100%;
+}
+
+.content-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.content-three__img-two {
+    flex: 1 0 36vh;
+    max-width: 100%;
+    max-height: 428px;
+}
+
+.content-three__text {
+    flex: 1 0 62vh;
+    max-width: 100%;
+    margin: 0;
+    font-family: 'RobotoLight';
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.content-four__image-three {
+    width: 100%;
+}
+
+/* Конец стилей main */
+
+
+
+/* Начало стилей footer */
+.footer {
+    padding-top: 58px;
+    background-color: #2C2C2C;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 15% 60px 8%;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+
+.footer__logo {
+    flex: 1 0 19%;
+    min-width: 145px;
+    max-width: 100%;
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 20%;
+    min-width: 103px;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.footer__title {
+    margin: 0em;
+    padding-bottom: 25px;
+    font-family: 'RobotoBold';
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.information__links a {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    font-family: 'RobotoMedium';
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 35%;
+    min-width: 120px;
+    max-width: 100%;
+    font-family: 'RobotoMedium';
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer__social-media {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 17%;
+    min-width: 193px;
+    max-width: 30%;
+}
+
+.media-links a {
+    color: #FFFFFF;
+}
+
+.media-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-family: 'OpenSansRegular';
+    font-size: 12px;
+    line-height: 183%;
+    color: rgba(200, 200, 200, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Конец стилей footer */
